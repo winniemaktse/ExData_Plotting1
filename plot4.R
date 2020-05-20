@@ -1,4 +1,4 @@
-plot2 <- function () {
+plot4 <- function () {
   
   ## read the file
   fulldata <- read.table("household_power_consumption.txt", header=TRUE, sep=";")

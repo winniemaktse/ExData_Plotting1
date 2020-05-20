@@ -1,4 +1,5 @@
-plot2 <- function () {
+plot3 <- function () {
+
   
   ## read the file
   fulldata <- read.table("household_power_consumption.txt", header=TRUE, sep=";")
@@ -26,6 +27,6 @@ plot2 <- function () {
       )
   lines(mydata$Time, mydata$Sub_metering_2, col="red", type="s")
   lines(mydata$Time, mydata$Sub_metering_3, col="blue", type="s")
-  legend("topright", pch=0, col = c("black", "red", "blue"), legend = names(mydata[7:9]))
+  legend("topright", col = c("black", "red", "blue"), legend = names(mydata[7:9]), lty = 1 )
   dev.off()
 }
